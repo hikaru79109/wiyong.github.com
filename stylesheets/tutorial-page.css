@@ -1,0 +1,266 @@
+:root {
+  --c-tut-table: #419873;
+  --c-tut-table-hover: #398564;
+}
+
+/* ===================== TUTORIAL PAGE ====================== */
+
+
+/* ====== recent update ===== */
+#recent-update {
+list-style-type: none;
+margin: 0 auto;
+line-height: 100px;
+height: 380px;
+overflow-y: scroll;
+}
+
+#recent-update li {
+padding: 0 5px 0 0;
+float: left;
+}
+
+#recent-update img:hover {
+background-color:#000;
+opacity:0.8;
+}
+
+@media screen and (max-width: 40.5em) {
+  #recent-update li {
+    display: block;
+    padding: 0;
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align:center;
+  }
+  #recent-update {
+    list-style-type: none;
+    line-height: 0px;
+  }
+}
+
+
+
+/* ======= tutorial title ====== */
+.tut-title {
+margin: 0;
+padding: 1em 0 0.5em 0;
+}
+
+/* ======= ads ========= */
+.ads-container {
+display: block;
+width: 100%;
+z-index: 1;
+margin: 0;
+padding:0;
+}
+
+/* ======= tutorial content menu ========= */
+.tut-content-menu {
+position: fixed;
+bottom: 2%;
+right: 30%;
+z-index: 0;
+}
+
+.tut-content-menu img {
+max-width: 4em;
+border-radius:50%;
+box-shadow: 0px 0px 10px #888888;
+
+}
+
+/* ====== switch video button ===== */
+div#switch-video-div {
+display:block;
+margin: 1em auto;
+text-align: center;
+}
+button#switch-video {
+display: inline;
+background-color: var(--c-n);
+border: none;
+font-size: 1em;
+padding: 0.2em 2em;
+color: #DCDCDC;
+box-shadow: 0px 0px 20px 2px #888888;
+border-radius:5px;
+}
+
+button#switch-video:hover {
+background-color: var(--c-n-mofan);
+}
+.collapse{
+display:none
+}
+.collapse.in{
+display:block
+}
+
+/* ======== table of contents ======== */
+.table-of-contents-ul {
+background-color: var(--c-tut-table);
+padding: 1em;
+border-radius: 20px;
+color: white;
+counter-reset: item;
+list-style-type: none;
+box-shadow: 0px 0px 20px 2px #888888;
+}
+
+.table-of-contents-ul h4 {
+color: #DCDCDC;
+text-align: left;
+}
+
+.chapter-li {
+margin: 0 1.5em;
+}
+
+.chapter-li ul {
+list-style-type: none;
+}
+
+.content-li {
+padding: 0.3em 0.3em;
+display: block;
+}
+
+.content-li a {
+color: #DCDCDC;
+text-decoration: none;
+}
+
+.content-li:hover {
+background-color: var(--c-tut-table-hover);
+}
+
+/* ======== inner page ======== */
+.course-summary-image {
+padding: 0;
+display:block;
+margin: 0 auto;
+width: 100%;
+box-shadow: 0px 0px 20px 2px #888888;
+}
+
+.course-image {
+padding: 0;
+display:block;
+margin: 0 auto;
+max-width: 85%;
+max-height: 450px;
+box-shadow: 0px 0px 10px 2px #888888;
+}
+
+h4.tut-h4-pad {
+padding-top: 5em;
+padding-bottom: 1.5em;
+}
+
+#tut-content p {
+padding: 0;
+}
+
+/* ======= tutorial two main parts ====== */
+main.tut-post {
+margin: 0 auto;
+background-color:#FAFAFA;
+box-shadow: 0px 0px 30px 5px  #888888;
+display: flex;
+width: 100%;
+}
+
+.tut-main-content {
+width: 75%;
+}
+
+.tut-main-content-pad {
+padding: 0 2em;
+}
+
+
+.side-nav {
+position: fixed;
+padding: 1em 0.5em;
+top: 5em;
+background-color:#FAFAFA;
+z-index: 1;
+width: 19%;
+}
+
+.tut-side-menu .ads-container {
+position: absolute;
+top: 63em;
+width: 19%;
+height: 800px;
+z-index: 0;
+}
+
+@media screen and (max-width: 40.5em) {
+  .tut-side-menu {
+  display: none;
+  width: 0;
+  }
+  .tut-main-content {
+  width: 100%;
+  padding: 2em 0;
+  margin: 0 auto;
+  display: block;
+  }
+  .tut-content-menu {
+  right:1em;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  main.tut-post {
+  max-width: 1200px;
+  }
+  main.tut-post {
+  max-width: 1200px;
+  max-height: calc(1200/16*9)px;
+  margin: 0 auto;
+  }
+ }
+
+/* ======= video and next previous button ====== */
+.link-under-youtube {
+text-align: center;
+margin: 0;
+}
+
+.PageNavigation {
+display: block;
+width: auto;
+overflow: hidden;
+}
+
+.PageNavigation a {
+display: block;
+color: white;
+background-color: #14b814;
+text-decoration: none;
+padding: 0.9em;
+margin: 0.5em 0;
+border-radius: 10px;
+}
+
+.PageNavigation i {
+font-size: 1em;
+}
+
+.PageNavigation a:hover {
+color: #303030;
+}
+
+.PageNavigation .prev {
+float: left;
+}
+
+.PageNavigation .next {
+float: right;
+text-align: right;
+}
