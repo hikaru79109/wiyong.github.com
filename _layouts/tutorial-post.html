@@ -1,0 +1,166 @@
+---
+layout: with-nav
+---
+
+<main class="tut-post">
+
+  <div class="tut-main-content">
+
+    <!-- page main title -->
+    <a class="hover-move bold" href="{{ site.baseurl }}{{ page.tut-permalink }}"><h1 class="tut-title">{{ page.tut-title }}</h1></a>
+
+    <!-- top ads -->
+    <div class="ads-container">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- video top -->
+      <ins class="adsbygoogle"
+           style="display:block;"
+           data-ad-client="ca-pub-4601203457616636"
+           data-ad-slot="5888750508"
+           data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+
+    <!-- video section -->
+    {% include embedded-video.html %}
+
+    <!-- upper page navigation -->
+    <div class="pad-main">
+      {% include prev-next-post.html %}
+    </div>
+
+    <!-- video button ads -->
+    <div class="ads-container">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- video button -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4601203457616636"
+           data-ad-slot="7365483702"
+           data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <!-- main content -->
+    <div class="tut-main-content-pad">
+      <hr>
+      <h1>{{page.title}}</h1>
+      <p style="text-align: center;">
+        {% if page.author-link != "#" %}
+          作者: <a href="{{page.author-link}}" target="_blank"><strong>{{page.author}}</strong></a> &nbsp;&nbsp;
+        {% else %}
+          作者: <strong>{{page.author}}</strong> &nbsp;&nbsp;
+        {% endif %}
+        编辑: <strong>{{page.editor}}</strong> &nbsp;&nbsp;
+        {% if page.publish-date %}
+          {{page.publish-date}}
+        {% else %}
+          2016-11-03
+        {% endif %}
+      </p>
+
+      {{content}}
+
+      <p style="font-size: 0.8em; padding:4em 1em 0.5em 1em; margin: 0 auto;">
+        如果你觉得这篇文章或视频对你的学习很有帮助, 请你也分享它, 让它能再次帮助到更多的需要学习的人.
+
+        莫烦没有正式的经济来源, 如果你也想支持 <strong>莫烦Python</strong> 并看到更好的教学内容, 赞助他一点点, 作为鼓励他继续开源的动力.
+      </p>
+
+      <!-- donation -->
+      <div>
+        <a id="bottom-donation-button" href="{{site.baseurl}}/support/"><strong>点我 赞助 莫烦</strong></a>
+      </div>
+
+      <hr>
+    </div>
+
+    <!-- lower page navigation -->
+    <div class="pad-main">
+      {% include prev-next-post.html %}
+    </div>
+
+    <div class="ads-container">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- comment top resize -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-4601203457616636"
+           data-ad-slot="4412017301"
+           data-ad-format="auto"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+
+    <!-- comment section -->
+    <div class="pad-main">
+      {% include comment-section.html %}
+    </div>
+
+    <!-- menu button -->
+    <div class="tut-content-menu">
+      <a class="hover-move" href="{{ site.baseurl }}{{ page.tut-permalink }}">
+        <img src="/static/img/icon/tutorial_contents_icon.png"></a>
+    </div>
+  </div>
+
+  <!-- page nav section -->
+  <div class="tut-side-menu">
+    <div class="side-nav">
+      <hr>
+      {% if page.post-headings %}
+      <strong>知道你想跳着看</strong>
+      <ul>
+        {% for heading in page.post-headings %}
+          <li><a href="{{ page.url }}#{{ heading }}">{{ heading }}</a> </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      <hr>
+    </div>
+
+    <!-- ads -->
+    <div class="ads-container">
+      <div>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- tut-page-side -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4601203457616636"
+             data-ad-slot="1501228408"
+             data-ad-format="auto"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+
+      <div>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- tut-side2 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4601203457616636"
+             data-ad-slot="3642152498"
+             data-ad-format="auto"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+
+
+</main>
+
